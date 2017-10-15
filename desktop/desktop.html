@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+ _____   _____        ___   _____   _   _        _____   _   __   _   _____   _   _  
+|  _  \ |  _  \      /   | |  _  \ | | | |      /  ___/ | | |  \ | | /  ___| | | | | 
+| |_| | | |_| |     / /| | | |_| | | |_| |      | |___  | | |   \| | | |     | |_| | 
+|  ___/ |  _  /    / / | | |  _  { |  _  |      \___  \ | | | |\   | | |  _  |  _  | 
+| |     | | \ \   / /  | | | |_| | | | | |       ___| | | | | | \  | | |_| | | | | | 
+|_|     |_|  \_\ /_/   |_| |_____/ |_| |_|      /_____/ |_| |_|  \_| \_____/ |_| |_| 
+
+Owner Of AiraSoftware (http://airasoftware.esy.es/)
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="icon" type="image/x-icon" href="../assets/fav.ico" />
+<meta name="viewport" content="width=device-width, initial-scale="1.0">
+<meta name="description" content="Glass is a open source web OS created for simple devices that display web content.">
+<meta name="author" content="Prabhjot Singh">
+<title>GLASS PI</title>
+</head>
+<body style="background-color: black; color: white;">
+
+<div class="bg-size">
+  <div class="color-overlay"></div>
+</div>
+
+<div class="dapps">
+
+<h1>Glass Apps</h1>
+
+<div class="appbox">
+<div class="appboxtext">
+<p>File Manager</p>
+</div>
+</div>
+
+<div id="opennotepad" class="appbox">
+<div class="appboxtext">
+<p>NotePad</p>
+</div>
+</div>
+
+<div id="openwritrr" class="appbox">
+<div class="appboxtext">
+<p>Writrr</p>
+</div>
+</div>
+
+<div id="opentexte" class="appbox">
+<div class="appboxtext">
+<p>TextEditor</p>
+</div>
+</div>
+
+<div id="openinternet" class="appbox">
+<div class="appboxtext">
+<p>Internet</p>
+</div>
+</div>
+
+<div id="opencustom" class="appbox">
+<div class="appboxtext">
+<p>Customize</p>
+</div>
+</div>
+
+</div>
+
+<div class="dnews">
+<h1>Today</h1>
+
+<iframe src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&noforecast=1&days=4&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&layout=dark"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups" style="width: 460px;height: 221px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/forecast/week?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank"></a></div>
+
+</div>
+
+
+<!-- APPS -->
+<div class="custom">
+<div class="glasswindow">
+<div class="topbar"><div id="closecustom" class="closewindowbtn">X</div><div class="topbartext">Customize</div></div>
+<div class="windowcontent">
+<iframe class="appiframe" src="apps/customize/app_customize.php"></iframe>
+</div>
+</div>
+</div>
+
+<div class="notepad">
+<div class="glasswindow">
+<div class="topbar"><div id="closenotepad" class="closewindowbtn">X</div><div class="topbartext">Notepad</div></div>
+<div class="windowcontent">
+<textarea class="notepad_textarea"></textarea>
+</div>
+</div>
+</div>
+
+<div class="internet">
+<div class="glasswindow">
+<div class="topbar"><div id="closeinternet" class="closewindowbtn">X</div> <input class="internet_homebtn" value="Home" type="button" onclick="setURL('apps/internet/index.html')" /> <input title="Youtube will display as a blank screen when opened through the Glass Internet App. Click this button to watch Youtube on this device. However, clicking this button will exit Glass OS. You may need to restart your device to boot back into Glass OS." class="internet_ytbtn" value="Youtube" onclick="javascript:location.href='https://youtube.com/'" type="button" /> <div class="topbartext">Internet</div></div>
+<div class="windowcontent">
+<iframe id="internet_home" class="appiframe" src="apps/internet/index.html"></iframe>
+</div>
+</div>
+</div>
+
+<div class="writrr">
+<div class="glasswindow">
+<div class="topbar"><div id="closewritrr" class="closewindowbtn">X</div><div class="topbartext">Writrr</div></div>
+<div class="windowcontent">
+<iframe class="appiframe" src="http://writrr.esy.es/"></iframe>
+</div>
+</div>
+</div>
+
+<div class="texte">
+<div class="glasswindow">
+<div class="topbar"><div id="closetexte" class="closewindowbtn">X</div><div class="topbartext">Text Editor</div></div>
+<div class="windowcontent">
+<iframe class="appiframe" src="https://repl.it/"></iframe>
+</div>
+</div>
+</div>
+<!-- APPS END -->
+
+</body>
+<script src="../js/frame.js"></script>
+</html>		

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+ _____   _____        ___   _____   _   _        _____   _   __   _   _____   _   _  
+|  _  \ |  _  \      /   | |  _  \ | | | |      /  ___/ | | |  \ | | /  ___| | | | | 
+| |_| | | |_| |     / /| | | |_| | | |_| |      | |___  | | |   \| | | |     | |_| | 
+|  ___/ |  _  /    / / | | |  _  { |  _  |      \___  \ | | | |\   | | |  _  |  _  | 
+| |     | | \ \   / /  | | | |_| | | | | |       ___| | | | | | \  | | |_| | | | | | 
+|_|     |_|  \_\ /_/   |_| |_____/ |_| |_|      /_____/ |_| |_|  \_| \_____/ |_| |_| 
+
+Owner Of AiraSoftware (http://airasoftware.esy.es/)
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav.ico" />
+<meta name="viewport" content="width=device-width, initial-scale="1.0">
+<meta name="description" content="Glass is a open source web OS created for simple devices that display web content.">
+<meta name="author" content="Prabhjot Singh">
+<title>GLASS PI</title>
+</head>
+<body style="background-color: black;">
+
+<div class="center-start">
+<h1>Hello, please login to your Glass account.</h1>
+<form name = "glogin">
+<p>
+<input placeholder="Username" class="linput" type="text" name="username"> 
+<input placeholder="Password" class="linput" type="password" name="pword">
+<input class="lbtn" type="button" value="Login" name="Submit" onclick= "validate()">
+</p>
+
+</form>
+</div>
+
+<a id="showhelp" class="lhelp"></a>
+
+  <!-- help popup -->
+<div class="nback">
+<div class="overlay2"></div>
+<div class="helpbox">
+<a id="hidehelp" class="btnc">X</a>
+<br />
+<h2>Glass Login Help</h2>
+<p>Need help logging into Glass?</p>
+<br />
+<h3>Default Password/Username</h3>
+<p>If you havent changed anything the default username is <b>user</b> and the default password is <b>pass</b>.</p>
+<h3>Changing The Password/Username</h3>
+<p>In the GlassPi folder there should be a file name <b>glassaccount.js</b>. Edit the file and save.</p>
+<h3>Is It Secure?</h3>
+<p>The Glass login system is not secure. The javascript file with the password and username could be read! Make sure you make the password something you have never used.</p>
+</div>
+</div>
+<!-- help popup END -->
+
+</body>
+<script src="js/frame.js"></script>
+<script src="glassaccount.js"></script>
+</html>		
